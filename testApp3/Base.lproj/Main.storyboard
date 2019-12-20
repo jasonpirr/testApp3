@@ -15,9 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4HZ-Of-JU4">
-                                <rect key="frame" x="70" y="353" width="235" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4HZ-Of-JU4">
+                                <rect key="frame" x="70" y="375.66666666666669" width="235" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                 <state key="normal" title="Нажми меня"/>
                                 <connections>
@@ -25,21 +24,29 @@
                                     <action selector="upButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vCR-HV-joo"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Тектовое поле" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IhP-an-pu7">
-                                <rect key="frame" x="86" y="422" width="202" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тектовое поле" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IhP-an-pu7">
+                                <rect key="frame" x="86.666666666666686" y="444.66666666666669" width="202" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jh0-SY-DId">
-                                <rect key="frame" x="128" y="50" width="118" height="41"/>
+                                <rect key="frame" x="128" y="341.66666666666669" width="88" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Press Me"/>
+                                <connections>
+                                    <action selector="pushOnLight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jaJ-Tm-RqT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4HZ-Of-JU4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6wG-pW-k3U"/>
+                            <constraint firstItem="IhP-an-pu7" firstAttribute="top" secondItem="4HZ-Of-JU4" secondAttribute="bottom" constant="8" symbolic="YES" id="XBI-11-QYi"/>
+                            <constraint firstItem="IhP-an-pu7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hLb-sY-Wqq"/>
+                            <constraint firstItem="4HZ-Of-JU4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zex-lv-77F"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>

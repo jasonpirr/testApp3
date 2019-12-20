@@ -9,6 +9,25 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var ligthOn = true
+    
+    @IBAction func pushOnLight(_ sender: UIButton) {
+        ligthOn = !ligthOn
+        updateUI()
+
+    }
+    
+    func updateUI() {
+        if ligthOn {
+            view.backgroundColor = UIColor.white
+        } else {
+            view.backgroundColor = UIColor.black
+        }
+    }
+    
+    
+    
     @IBOutlet weak var myButton: UIButton!
     @IBOutlet weak var myLabel: UILabel!
     @IBAction func actButton(_ sender: UIButton) {
